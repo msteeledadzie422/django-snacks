@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class="text-3xl text-yellow-600">Welcome to our Snacks Home Page!</h1>
+  {% for snack in snacks %}
+    <h2 class="text-blue-600">Name: {{ snack.title }}</h2>
+    <p>Description: {{ snack.description }}</p>
+  {% endfor %}
+{% endblock content %}
